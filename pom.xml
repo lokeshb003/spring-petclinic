@@ -141,6 +141,18 @@
         </executions>
       </plugin>
       <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nxrm3-maven-plugin</artifactId>
+        <version>1.0.3</version>
+        <extensions>true</extensions>
+        <configuration>
+          <nexusUrl>http://194.195.113.17:8081</nexusUrl>
+          <serverId>admin</serverId>
+          <repository>maven-releases</repository>
+          <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>org.pitest</groupId>
         <artifactId>pitest-maven</artifactId>
         <version>1.10.3</version>
